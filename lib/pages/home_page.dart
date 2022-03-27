@@ -5,8 +5,8 @@ import '../models/item.dart';
 class HomePage extends StatelessWidget{
   HomePage({Key? key}) : super(key: key);
   final List<Item> items = [
-    Item(name: 'Sugar', price: 5000),
-    Item(name: 'Salt', price: 2000),
+    Item(name: 'Gulaku 1 kg', image: 'assets/images/gulaku.jpg', price: 12500),
+    // Item(name: 'Salt', image:, price: 2000),
   ];
 
   @override
