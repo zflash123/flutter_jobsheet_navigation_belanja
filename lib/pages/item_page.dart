@@ -8,7 +8,7 @@ class ItemPage extends StatelessWidget{
   Widget build(BuildContext context) {
     final Item itemArgs = ModalRoute.of(context)!.settings.arguments as Item;
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Color.fromARGB(255, 240, 240, 240),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -18,7 +18,7 @@ class ItemPage extends StatelessWidget{
               width: 300,
               child: Image.asset(itemArgs.image)
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 13),
             Text(
               'Nama Barang: '+itemArgs.name+'\nHarga Barang: Rp'+ itemArgs.price.toString()+',00',
               style: const TextStyle(fontSize: 25, color: Colors.black)
